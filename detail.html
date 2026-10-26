@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="星际漫游宇航员潮玩商品详情" />
+    <title>星际漫游宇航员｜TOYBOX</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23ef4b3f'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-size='23' font-family='Arial' font-weight='700' fill='white'%3ETOY%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <aside class="student-info" aria-label="作业信息">
+      <span>姓名：________</span><span>准考证号：________</span
+      ><span>课程代码：________</span><span>课程名称：________</span>
+    </aside>
+    <header class="site-header">
+      <a class="logo" href="index.html"
+        ><span class="logo-block">TOY</span>BOX</a
+      >
+      <nav class="main-nav" aria-label="主要导航">
+        <a href="index.html">首页</a><a href="index.html#new">新品</a
+        ><a href="index.html#categories">分类</a
+        ><a href="index.html#popular">热门</a
+        ><a class="active" href="detail.html">限时活动</a>
+      </nav>
+      <button class="cart-button" type="button">
+        购物袋 <span class="cart-count">0</span>
+      </button>
+    </header>
+
+    <main class="detail-main">
+      <nav class="breadcrumb" aria-label="面包屑导航">
+        <a href="index.html">首页</a><span>/</span
+        ><a href="index.html#popular">潮流手办</a><span>/</span
+        ><b>星际漫游宇航员</b>
+      </nav>
+      <section class="product-detail">
+        <div class="detail-gallery">
+          <div class="detail-image">
+            <span class="detail-badge">LIMITED</span
+            ><img
+              id="detail-product-image"
+              src="assets/images/astronaut.svg"
+              alt="星际漫游宇航员潮玩正面"
+            />
+          </div>
+          <div class="thumbnail-row">
+            <button
+              class="thumbnail active"
+              type="button"
+              data-image="assets/images/astronaut.svg"
+            >
+              <img src="assets/images/astronaut.svg" alt="宇航员正面缩略图" />
+            </button>
+            <button
+              class="thumbnail"
+              type="button"
+              data-image="assets/images/robot.svg"
+            >
+              <img src="assets/images/robot.svg" alt="机器人系列缩略图" />
+            </button>
+            <button
+              class="thumbnail"
+              type="button"
+              data-image="assets/images/bear.svg"
+            >
+              <img src="assets/images/bear.svg" alt="抱抱熊系列缩略图" />
+            </button>
+          </div>
+        </div>
+
+        <div class="detail-info">
+          <p class="kicker">SPACE SERIES · NO.01</p>
+          <h1>星际漫游<br />宇航员</h1>
+          <div class="rating">
+            <span>★★★★★</span><b>4.9</b><small>128 条评价</small>
+          </div>
+          <p class="detail-description">
+            戴上透明星球头盔，和勇敢的小小宇航员一起出发。圆润造型搭配可活动手臂，是书桌上最有想象力的陪伴。
+          </p>
+          <div class="price-row">
+            <strong>¥129.00</strong><del>¥159.00</del><span>限时优惠</span>
+          </div>
+          <div class="option-group">
+            <b>选择颜色</b>
+            <div class="color-options">
+              <button class="color-option selected" type="button">
+                <i class="color-blue"></i>星云蓝</button
+              ><button class="color-option" type="button">
+                <i class="color-yellow"></i>月球黄</button
+              ><button class="color-option" type="button">
+                <i class="color-red"></i>火星红
+              </button>
+            </div>
+          </div>
+          <div class="buy-row">
+            <div class="quantity">
+              <button type="button" data-action="minus">−</button
+              ><input
+                id="quantity"
+                type="number"
+                value="1"
+                min="1"
+                max="9"
+                aria-label="购买数量"
+              /><button type="button" data-action="plus">＋</button>
+            </div>
+            <button class="buy-button add-cart" type="button">
+              加入购物袋
+            </button>
+          </div>
+          <ul class="detail-points">
+            <li><b>材质</b><span>环保 PVC / 亚克力</span></li>
+            <li><b>尺寸</b><span>高约 16 cm</span></li>
+            <li><b>适用年龄</b><span>8 岁以上</span></li>
+            <li><b>发货</b><span>付款后 48 小时内</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="detail-story">
+        <p class="kicker">THE STORY</p>
+        <h2>探索未知，<br />是每颗童心的本能。</h2>
+        <p>
+          “星际漫游”系列以孩子对宇宙的第一份好奇为灵感。头盔中的星点、胸前的能量按钮和背后的迷你推进器，都藏着等待发现的小细节。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="logo footer-logo" href="index.html"
+        ><span class="logo-block">TOY</span>BOX</a
+      >
+      <p>玩心不设限，快乐有形状。</p>
+      <p>© 2026 TOYBOX</p>
+    </footer>
+    <div class="toast" role="status" aria-live="polite">已加入购物袋</div>
+  </body>
+</html>
